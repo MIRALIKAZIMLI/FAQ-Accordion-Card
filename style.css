@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main{
+    height: 100vh;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: hsl(240, 5%, 91%);
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 50px;
+    width: 920px;
+    border-radius: 30px;
+    height: 400px;
+}
+
+.img_container{
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 65%;
+    position: relative;
+}
+.img_container img:nth-child(1){
+    position: absolute;
+    width: 100%;
+    top: 61px;
+}
+.img_container img:nth-child(2){
+    position: absolute;
+    top: 176px;
+    left: 14px;
+    width: 39%;
+}
+
+.text-container{
+    padding: 50px 80px 50px 30px;
+}
+.header-text{
+    margin-bottom: 10px;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid hsl(240, 15%, 81%);
+    cursor: pointer;
+}
+.question-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-text p{
+    font-size: 15px;
+    color: hsl(237, 12%, 33%);
+}
+.question-text p:hover{
+    color: hsl(14, 88%, 65%);
+}
+.drop-text{
+    padding: 4px 0;
+}
+.drop-text p{
+    font-size: 12px;
+    color: hsl(240, 6%, 50%);
+    padding-right: 10px;
+}
+.question-text img{
+    width: 13px;
+    height: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.active{
+    color: black;
+    font-weight: 700;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
